@@ -8,7 +8,7 @@ const captureScreenshot = () => {
       .then((canvas) => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
-        link.download = 'Unique Journey.png';
+        link.download = 'Unique_Journey.png';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
